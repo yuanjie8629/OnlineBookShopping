@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Home</title>
+		<link rel="stylesheet" href="styles.css">
+		<style>
+		.container {
+			color: white;
+			display: flex;
+			height: 560px;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+		}
+		
+		.title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 0;
+			margin: 0;
+		}
+		
+		.title2 {
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 0;
+			margin: 0;
+		}
+		</style>
+	</head>
+	<body class="container">
+		<div class="slide fade">
+	    	<img src="./images/BookBackground.jpg" style="width:100%;">
+	    	<h1 class="title">Welcome to Online Book Shopping</h1>
+	    </div>
+	    <div class="slide fade">
+	    	<img src="./images/BookBackground2.jpg" style="width:100%;">
+	    	<h1 class="title2">Welcome to Online Book Shopping</h1>
+	    </div>
+	    <div class="slide fade">
+	    	<img src="./images/BookBackground3.jpg" style="width:100%;">
+	    	<h1 class="title">Welcome to Online Book Shopping</h1>
+	    </div>
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<script src="slider.js"></script>
+	</body>
+</html>

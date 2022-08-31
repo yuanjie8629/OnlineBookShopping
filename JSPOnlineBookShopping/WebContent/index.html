@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Online Book Shopping</title>
+		<script>
+	    setTimeout(function preventBack() {
+			window.history.forward();
+		}, 0);
+	    window.onunload=function(){
+	    	null
+	    };
+	    
+		if (top.location != self.location) {
+		      top.location.href = self.location.href;
+		}
+		</script>
+		<style>
+		.header {
+			color: #ffa34d;
+			text-decoration: none;
+		}
+		
+		.header:hover {
+			color: #ffbb4d;
+			text-decoration: none;
+		}
+		
+		.nav {
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		    text-align: center;
+		}
+		
+		.nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		
+		.nav li{
+		    display: inline;
+		}
+		
+		.nav li a:hover {
+		 	background-color: #111;
+		 	color: #ffbb4d;
+		}
+		
+		.nav a{
+			display:inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		
+		.frame {
+			border: none;
+			margin: 20px 0 10px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			border-radius: 15px;
+			min-height: 560px;
+		}
+		</style>
+	</head>
+	<body style="background: radial-gradient(circle, rgba(238,238,228,1) 0%, rgba(233,220,148,1) 100%);">
+		<h1 style="text-align:center;"><a class="header" href="./index.html" target="_self">Online Book Shopping</a></h1>
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="./AboutUs.html" target="frame">About Us</a>
+				</li>
+				<li>
+					<a href="./Login.jsp" target="frame">Login</a>
+				</li>
+				<li>
+					<a href="./Register.jsp" target="frame">Register as Customer</a>
+				</li>
+				<li>
+					<a href="./ContactUs.jsp" target="frame">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+		<div align="center">
+			<iframe name="frame" class="frame" src='./HomePage.html' width="80%" height="100%">
+			</iframe>
+		</div>
+	</body>
+</html>
